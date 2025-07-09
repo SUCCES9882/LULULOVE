@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LULULOVE - Beauty & Elegance</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fefaf7;
+      color: #4b3b36;
+    }
+    header {
+      background: linear-gradient(to bottom, #fff6f0, #fefaf7);
+      padding: 40px 20px 20px;
+      text-align: center;
+    }
+    header img {
+      width: 140px;
+      height: auto;
+      margin-bottom: 10px;
+      opacity: 0.95;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8em;
+      color: #a65e44;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.1em;
+      color: #6d4c41;
+      margin: 5px 0 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      background-color: #fff3eb;
+      padding: 15px 0;
+    }
+    nav a {
+      color: #a65e44;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1em;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section.hero {
+      background-image: url('https://images.unsplash.com/photo-1618453292459-3e1c1f83c4f3');
+      background-size: cover;
+      background-position: center;
+      padding: 120px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    section.hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(255, 255, 255, 0.6); /* fond clair semi-transparent */
+      z-index: 0;
+    }
+
+    .hero h2, .hero p, .hero a {
+      position: relative;
+      z-index: 1;
+      color: #a65e44; /* couleur LULULOVE */
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.3em;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2em;
+      color: #a65e44;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #a65e44;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      margin-top: 20px;
+      background-color: #a65e44;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    .btn:hover {
+      background-color: #8b4d39;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="LULULOVE Logo">
+    <h1>LULULOVE</h1>
+    <p>Beauty & Elegance - Sublime ta beauté</p>
+  </header>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#services">Services</a>
+    <a href="#boutique">Boutique</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section class="hero" id="accueil">
+    <h2>Révélez votre élégance</h2>
+    <p>Coiffure, maquillage, conseils en image et bien plus encore</p>
+    <a href="#services" class="btn">Découvrir nos services</a>
+  </section>
+  <section id="services">
+    <h2>Nos services</h2>
+    <p>Coiffure, maquillage professionnel, conseils en image, soins de beauté...</p>
+    <a href="#contact" class="btn">Prendre rendez-vous</a>
+  </section>
+  <section id="boutique">
+    <h2>Notre Boutique</h2>
+    <p>Découvrez nos perruques, accessoires de beauté et produits en ligne.</p>
+    <a href="#contact" class="btn">Voir les produits</a>
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email : contact@lululove.com<br>Téléphone : 04 109 76 71</p>
+    <a href="https://wa.me/242041097671" class="btn">Contact WhatsApp</a>
+  </section>
+  <footer>
+    <p>&copy; 2025 LULULOVE - Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
